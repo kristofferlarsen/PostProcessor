@@ -1,0 +1,3685 @@
+<rrs2_Program version="3.6">
+  <rrs2_ProgramName value="KR 120 R2500 pro_Program"/>
+  <rrs2_MainRoutine>
+    <rrs2_RoutineBody>
+      <rrs2_SubRoutineCallStatement name="RC1">
+        <rrs2_SubRoutineName value="whatever"/>
+      </rrs2_SubRoutineCallStatement>
+    </rrs2_RoutineBody>
+  </rrs2_MainRoutine>
+  <rrs2_SubRoutine>
+    <rrs2_SubRoutineName value="whatever"/>
+    <rrs2_RoutineBody>
+      <rrs2_PureMotionStatement name="P1">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300" py="0" pz="1500"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-100.954806633894"/>
+            <DOUBLE value="116.292302485248"/>
+            <DOUBLE value="-180"/>
+            <DOUBLE value="15.3374958513541"/>
+            <DOUBLE value="-180"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P2">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300" py="0" pz="1748"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-103.31128932206"/>
+            <DOUBLE value="103.6037333374"/>
+            <DOUBLE value="-180"/>
+            <DOUBLE value="0.292444015339271"/>
+            <DOUBLE value="-180"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P3">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="15.5720488432697" pz="1747.51062865021"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-0.82225937728424"/>
+            <DOUBLE value="-103.304330298406"/>
+            <DOUBLE value="103.626662352745"/>
+            <DOUBLE value="-248.595874589638"/>
+            <DOUBLE value="0.883176824823408"/>
+            <DOUBLE value="-111.406438371321"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P4">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="31.0826419239475" pz="1746.04444592599"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-1.64093755864508"/>
+            <DOUBLE value="-103.283469587027"/>
+            <DOUBLE value="103.695349459973"/>
+            <DOUBLE value="-255.913510238349"/>
+            <DOUBLE value="1.6918258525701"/>
+            <DOUBLE value="-104.092388261249"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P5">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="46.4705660172597" pz="1743.60723818071"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-2.45248019704417"/>
+            <DOUBLE value="-103.248756138997"/>
+            <DOUBLE value="103.809495648706"/>
+            <DOUBLE value="-257.128969113044"/>
+            <DOUBLE value="2.51572968757785"/>
+            <DOUBLE value="-102.88303372149"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P6">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="61.675092016884" pz="1740.2086239599"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-3.25338600293787"/>
+            <DOUBLE value="-103.200271121763"/>
+            <DOUBLE value="103.968605233654"/>
+            <DOUBLE value="-256.726400742265"/>
+            <DOUBLE value="3.34278673962902"/>
+            <DOUBLE value="-103.295419335525"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P7">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="76.636214604987" pz="1735.8620160412"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-4.04023170294204"/>
+            <DOUBLE value="-103.138127319963"/>
+            <DOUBLE value="104.171989778501"/>
+            <DOUBLE value="-255.670040899776"/>
+            <DOUBLE value="4.17020042044152"/>
+            <DOUBLE value="-104.366426784723"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P8">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="91.2948890658001" pz="1730.58456850029"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-4.80969519790483"/>
+            <DOUBLE value="-103.062468349794"/>
+            <DOUBLE value="104.418773444905"/>
+            <DOUBLE value="-254.288441218484"/>
+            <DOUBLE value="4.99683982374"/>
+            <DOUBLE value="-105.768522417312"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P9">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="105.593264308138" pz="1724.39710901157"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-5.55857645296703"/>
+            <DOUBLE value="-102.973467736899"/>
+            <DOUBLE value="104.70789963081"/>
+            <DOUBLE value="-252.724253036946"/>
+            <DOUBLE value="5.82207710186501"/>
+            <DOUBLE value="-107.359952783771"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P10">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="119.474911177225" pz="1717.32405665088"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-6.28381575391546"/>
+            <DOUBLE value="-102.871327917711"/>
+            <DOUBLE value="105.038138735022"/>
+            <DOUBLE value="-251.049653196723"/>
+            <DOUBLE value="6.64549232121422"/>
+            <DOUBLE value="-109.069300800543"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P11">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="132.885045154791" pz="1709.3933255245"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-6.98250907764225"/>
+            <DOUBLE value="-102.756279231275"/>
+            <DOUBLE value="105.408096865336"/>
+            <DOUBLE value="-249.305282779771"/>
+            <DOUBLE value="7.46677421101842"/>
+            <DOUBLE value="-110.856531837679"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P12">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="145.770742568533" pz="1700.63621460499"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-7.65192044276836"/>
+            <DOUBLE value="-102.628578972738"/>
+            <DOUBLE value="105.816225295858"/>
+            <DOUBLE value="-247.515924874224"/>
+            <DOUBLE value="8.28567923325252"/>
+            <DOUBLE value="-112.697303827692"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P13">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="158.081149457675" pz="1691.0872842084"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-8.28949122269142"/>
+            <DOUBLE value="-102.488510580764"/>
+            <DOUBLE value="106.260830475639"/>
+            <DOUBLE value="-245.697658676039"/>
+            <DOUBLE value="9.10201101546619"/>
+            <DOUBLE value="-114.575804176796"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P14">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="169.767682270315" pz="1680.78421960051"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-8.892846511485"/>
+            <DOUBLE value="-102.336383029398"/>
+            <DOUBLE value="106.740084394873"/>
+            <DOUBLE value="-243.861445228899"/>
+            <DOUBLE value="9.9156074325501"/>
+            <DOUBLE value="-116.481158174977"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P15">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="180.78421960051" pz="1669.76768227031"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-9.45979872840411"/>
+            <DOUBLE value="-102.172530490473"/>
+            <DOUBLE value="107.252035125895"/>
+            <DOUBLE value="-242.015061254593"/>
+            <DOUBLE value="10.7263304720945"/>
+            <DOUBLE value="-118.405492373203"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P16">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="191.087284208396" pz="1658.08114945768"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-9.98834872582142"/>
+            <DOUBLE value="-101.997312326017"/>
+            <DOUBLE value="107.794617373098"/>
+            <DOUBLE value="-240.164205487101"/>
+            <DOUBLE value="11.5340568525411"/>
+            <DOUBLE value="-120.342828371084"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P17">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="200.636214604987" pz="1645.77074256853"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-10.4766847262842"/>
+            <DOUBLE value="-101.811113461384"/>
+            <DOUBLE value="108.365662887212"/>
+            <DOUBLE value="-238.313163237629"/>
+            <DOUBLE value="12.3386685132416"/>
+            <DOUBLE value="-122.28842109637"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P18">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300" py="209.3933255245"
+            pz="1632.88504515479"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-10.9231794564544"/>
+            <DOUBLE value="-101.614345179618"/>
+            <DOUBLE value="108.962910624099"/>
+            <DOUBLE value="-236.465222397454"/>
+            <DOUBLE value="13.1400426074461"/>
+            <DOUBLE value="-124.23834814664"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P19">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="217.324056650878" pz="1619.47491117723"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-11.326385869573"/>
+            <DOUBLE value="-101.407446365864"/>
+            <DOUBLE value="109.584016554836"/>
+            <DOUBLE value="-234.622943277539"/>
+            <DOUBLE value="13.9380408747629"/>
+            <DOUBLE value="-126.189247555871"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P20">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="224.397109011573" pz="1605.59326430814"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-11.6850318552571"/>
+            <DOUBLE value="-101.190885217799"/>
+            <DOUBLE value="110.22656306129"/>
+            <DOUBLE value="-232.788339200502"/>
+            <DOUBLE value="14.7324983946494"/>
+            <DOUBLE value="-128.138146830764"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P21">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="230.584568500286" pz="1591.2948890658"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-11.9980143280252"/>
+            <DOUBLE value="-100.965161424164"/>
+            <DOUBLE value="110.888067878593"/>
+            <DOUBLE value="-230.963000791437"/>
+            <DOUBLE value="15.5232117896448"/>
+            <DOUBLE value="-130.082350081762"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P22">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="235.862016041198" pz="1576.63621460499"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P23">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="240.208623959901" pz="1561.67509201688"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P24">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="243.607238180715" pz="1546.47056601726"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P25">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="246.04444592599" pz="1531.08264192395"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P26">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="247.510628650211" pz="1515.57204884327"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P27">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300" py="248"
+            pz="1500"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P28">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="247.510628650211" pz="1484.42795115673"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P29">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="246.044445925991" pz="1468.91735807605"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P30">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="243.607238180715" pz="1453.52943398274"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P31">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="240.208623959901" pz="1438.32490798312"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P32">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="235.862016041198" pz="1423.36378539501"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P33">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="230.584568500286" pz="1408.7051109342"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P34">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="224.397109011573" pz="1394.40673569186"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P35">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="217.324056650878" pz="1380.52508882277"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P36">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300" py="209.3933255245"
+            pz="1367.11495484521"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P37">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="200.636214604987" pz="1354.22925743147"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P38">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="191.087284208396" pz="1341.91885054232"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P39">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="180.78421960051" pz="1330.23231772969"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P40">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="169.767682270315" pz="1319.21578039949"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P41">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="158.081149457675" pz="1308.9127157916"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P42">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="145.770742568533" pz="1299.36378539501"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P43">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="132.885045154791" pz="1290.6066744755"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P44">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="119.474911177225" pz="1282.67594334912"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P45">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="105.593264308138" pz="1275.60289098843"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P46">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="91.2948890658002" pz="1269.41543149971"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P47">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="76.636214604987" pz="1264.1379839588"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P48">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="61.6750920168841" pz="1259.7913760401"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P49">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="46.4705660172597" pz="1256.39276181928"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P50">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="31.0826419239475" pz="1253.95555407401"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P51">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="15.5720488432698" pz="1252.48937134979"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P52">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="3.01980662698043e-14" pz="1252"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P53">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-15.5720488432697" pz="1252.48937134979"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P54">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-31.0826419239475" pz="1253.95555407401"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P55">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-46.4705660172597" pz="1256.39276181929"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P56">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-61.6750920168839" pz="1259.7913760401"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P57">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-76.6362146049869" pz="1264.1379839588"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P58">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-91.2948890658001" pz="1269.41543149971"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P59">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-105.593264308138" pz="1275.60289098843"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P60">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-119.474911177225" pz="1282.67594334912"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P61">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-132.885045154791" pz="1290.6066744755"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P62">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-145.770742568533" pz="1299.36378539501"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P63">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-158.081149457675" pz="1308.9127157916"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P64">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-169.767682270315" pz="1319.21578039949"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P65">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-180.78421960051" pz="1330.23231772969"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P66">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-191.087284208396" pz="1341.91885054232"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P67">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-200.636214604987" pz="1354.22925743147"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P68">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-209.3933255245" pz="1367.11495484521"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P69">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-217.324056650878" pz="1380.52508882277"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P70">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-224.397109011573" pz="1394.40673569186"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P71">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-230.584568500286" pz="1408.7051109342"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P72">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-235.862016041198" pz="1423.36378539501"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P73">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-240.208623959901" pz="1438.32490798312"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P74">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-243.607238180715" pz="1453.52943398274"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P75">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-246.04444592599" pz="1468.91735807605"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P76">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-247.510628650211" pz="1484.42795115673"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P77">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300" py="-248"
+            pz="1500"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P78">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-247.510628650211" pz="1515.57204884327"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P79">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-246.044445925991" pz="1531.08264192395"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P80">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-243.607238180715" pz="1546.47056601726"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P81">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-240.208623959901" pz="1561.67509201688"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P82">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-235.862016041198" pz="1576.63621460499"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P83">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-230.584568500286" pz="1591.2948890658"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P84">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-224.397109011573" pz="1605.59326430814"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P85">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-217.324056650878" pz="1619.47491117723"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P86">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-209.3933255245" pz="1632.88504515479"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P87">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-200.636214604987" pz="1645.77074256853"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P88">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-191.087284208396" pz="1658.08114945767"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P89">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-180.78421960051" pz="1669.76768227031"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P90">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-169.767682270315" pz="1680.78421960051"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P91">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-158.081149457675" pz="1691.0872842084"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P92">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-145.770742568533" pz="1700.63621460499"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P93">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-132.885045154791" pz="1709.3933255245"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P94">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-119.474911177226" pz="1717.32405665088"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P95">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-105.593264308138" pz="1724.39710901157"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P96">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-91.2948890658001" pz="1730.58456850029"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P97">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-76.636214604987" pz="1735.8620160412"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P98">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-61.6750920168841" pz="1740.2086239599"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P99">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-46.4705660172597" pz="1743.60723818071"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P100">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-31.0826419239476" pz="1746.04444592599"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P101">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-15.5720488432697" pz="1747.51062865021"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P102">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value=""/>
+            <VALUE aw="0" ax="1" ay="0" az="6.12303176911189e-17"
+            name="Target" nw="0" nx="6.12303176911189e-17" ny="0" nz="-1"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1300"
+            py="-6.03961325396085e-14" pz="1748"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-90"/>
+            <DOUBLE value="90"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="0"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+    </rrs2_RoutineBody>
+  </rrs2_SubRoutine>
+</rrs2_Program>
