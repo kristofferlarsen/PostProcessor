@@ -1,41 +1,179 @@
 package com.Magic;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
 import javax.swing.*;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
-import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 
 public class PostProcessor {
     String targetPath = "";
     String sourcePath = "";
+    PrintWriter writer = null;
+    String positionType = "";
 
-    public PostProcessor(File from, File to)
+    public PostProcessor(File from, File to,String positionType)
     {
+        this.positionType = positionType;
         sourcePath = from.getPath();
         targetPath = to.getPath();
-        System.out.print("File to open: " + sourcePath + ", ResultFile: " + targetPath);
-        writeFile(targetPath);
-    }
-
-    private void createFile(String filetocreate)
-    {
-        File tmp = new File(filetocreate);
-    }
-
-    private void writeFile(String targetPath)
-    {
-        PrintWriter writer = null;
+        System.out.print("File to open: " + sourcePath + ", ResultFile: " + targetPath+"\n");
         try {
-            writer = new PrintWriter(targetPath,"UTF-8");
+            writeFileLine("@START@");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        if(writer != null){
-            writer.write(doFileHead());
+        processXML(positionType);
+        try {
+            writeFileLine("@END@");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * This is where the magic happens, read the xml, generate .SRC code lines based on application launch arguments [-a,-c]
+     * @param positionType
+     */
+    private void processXML(String positionType){
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        DocumentBuilder db = null;
+        Document document = null;
+        try {
+            db = dbf.newDocumentBuilder();
+            document = db.parse(new File(sourcePath));
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if(document != null)
+        {
+            //successfully created a document
+            NodeList nodes = document.getElementsByTagName("rrs2_PureMotionStatement");
+            for(int i = 0; i< nodes.getLength();i++)
+            {
+                NodeList childNodes = nodes.item(i).getChildNodes();
+                Node targetFrame = childNodes.item(1);
+                Node targetParameters = findSubNode("TargetParameters",targetFrame);
+                Node localJoints = findSubNode("LocalJoints",targetFrame);
+                Node motionParamters = findSubNode("MotionParameters",targetFrame);
+                Node pointData = targetParameters.getChildNodes().item(5);
+                Node motionData = motionParamters.getChildNodes().item(1);
+                Node axis1Data = localJoints.getChildNodes().item(1);
+                Node axis2Data = localJoints.getChildNodes().item(3);
+                Node axis3Data = localJoints.getChildNodes().item(5);
+                Node axis4Data = localJoints.getChildNodes().item(7);
+                Node axis5Data = localJoints.getChildNodes().item(9);
+                Node axis6Data = localJoints.getChildNodes().item(11);
+
+                double a1 = Double.parseDouble(axis1Data.getAttributes().getNamedItem("value").getNodeValue());
+                double a2 = Double.parseDouble(axis2Data.getAttributes().getNamedItem("value").getNodeValue());
+                double a3 = Double.parseDouble(axis3Data.getAttributes().getNamedItem("value").getNodeValue());
+                double a4 = Double.parseDouble(axis4Data.getAttributes().getNamedItem("value").getNodeValue());
+                double a5 = Double.parseDouble(axis5Data.getAttributes().getNamedItem("value").getNodeValue());
+                double a6 = Double.parseDouble(axis6Data.getAttributes().getNamedItem("value").getNodeValue());
+
+                double x = Double.parseDouble(pointData.getAttributes().getNamedItem("px").getNodeValue());
+                double y = Double.parseDouble(pointData.getAttributes().getNamedItem("py").getNodeValue());
+                double z = Double.parseDouble(pointData.getAttributes().getNamedItem("pz").getNodeValue());
+                String motionType = motionData.getAttributes().getNamedItem("value").getNodeValue();
+
+                StringBuffer sb = new StringBuffer();
+                if(motionType.equalsIgnoreCase("LINEAR"))
+                {
+                    sb.append("LIN {");
+                }
+                else
+                {
+                    sb.append("PTP {");
+                }
+                if(positionType.equalsIgnoreCase("-c")) {
+                    sb.append("X " + x + ",");
+                    sb.append("Y " + y + ",");
+                    sb.append("Z " + z + ",");
+                    try {
+                        writeFileLine(sb.toString());
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if(positionType.equalsIgnoreCase("-a"))
+                {
+                    sb.append("AXIS: ");
+                    sb.append("A1 "+a1+",");
+                    sb.append("A2 "+a2+",");
+                    sb.append("A3 "+a3+",");
+                    sb.append("A4 "+a4+",");
+                    sb.append("A5 "+a5+",");
+                    sb.append("A6 "+a6+",");
+                    sb.append("}");
+                    try {
+                        writeFileLine(sb.toString());
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+    }
+
+    public Node findSubNode(String name, Node node) {
+        if (node.getNodeType() != Node.ELEMENT_NODE) {
+            System.err.println("Error: Search node not of element type");
+            System.exit(22);
+        }
+
+        if (! node.hasChildNodes()) return null;
+
+        NodeList list = node.getChildNodes();
+        for (int i=0; i < list.getLength(); i++) {
+            Node subnode = list.item(i);
+            if (subnode.getNodeType() == Node.ELEMENT_NODE) {
+                if (subnode.getNodeName().equals(name))
+                    return subnode;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Writes a line in the .src file
+     * @param line
+     * @throws FileNotFoundException
+     * @throws UnsupportedEncodingException
+     */
+    private void writeFileLine(String line) throws FileNotFoundException, UnsupportedEncodingException {
+        if(line.equalsIgnoreCase("@START@"))
+        {
+            writer = new PrintWriter(targetPath,"UTF-8");
+            writer.write(doFileHead()+"\n");
+        }
+        else if(line.equalsIgnoreCase("@END@"))
+        {
+            writer.write("END");
             writer.close();
+        }
+        else
+        {
+            writer.write(line+"\n");
         }
     }
 
@@ -50,18 +188,19 @@ public class PostProcessor {
                 "DECL AXIS HOME\n\n" +
                 "BAS (#INITMOV, 0)\n\n" +
                 "HOME = {AXIS: A1 0, A2 -90, A3 90, A4 0, A5 0, A6 0}\n" +
-                "PTP HOME\n";
+                "PTP HOME";
         return head;
     }
 
     /**
      * Main entrypoint for PostProcessor. Can be run in 3 different ways:
-     *  - no arguments: presents the user with a file chooser to select the .RSI file to convert to .SRC
-     *  - one input argument: the file to convert from .RSI to .SRC, this file must be a .RSI file.
-     *  - two input arguments: source .RSI file, target .SRC file
+     *  - no arguments: presents the user with a file chooser to select the .RSI file to convert to .SRC, Th output file will use the -c parameter
+     *  - one input argument: presents the user with a file chooser to select the .RSI file to convert to .SRC, Th output file will be set by the arguement [-a,-c]
+     *  - two input arguments: code type argument [-a,-c] and file to open, the result file will be named the same as the target, and placed in the result folder.
      * @param args
      */
     public static void main(String[] args) {
+        String[] arguments = args;
 
         String currentDir = System.getProperty("user.dir");
         if(!new File("Resorces").exists())
@@ -81,11 +220,15 @@ public class PostProcessor {
         }
         File fileToOpen;
         String[] tmps;
+        File dest;
+        String[] desttmps;
+        JFileChooser fc;
+        int returnVal;
         switch (args.length) {
             case 0:
                 //no input arguments, load gui
-                JFileChooser fc = new JFileChooser(new File(currentDir));
-                int returnVal = fc.showOpenDialog(null);
+                fc = new JFileChooser(new File(currentDir));
+                returnVal = fc.showOpenDialog(null);
                 if(returnVal == JFileChooser.APPROVE_OPTION)
                 {
                     fileToOpen = fc.getSelectedFile();
@@ -97,7 +240,7 @@ public class PostProcessor {
                     }
                     try {
                         Files.copy(fileToOpen.toPath(),new File("Resorces\\source\\"+tmps[0]+"."+tmps[1]).toPath(), StandardCopyOption.REPLACE_EXISTING);
-                        PostProcessor p = new PostProcessor(new File("Resorces\\source\\"+tmps[0]+"."+tmps[1]),new File("Resorces\\result\\"+tmps[0]+"."+"src"));
+                        PostProcessor p = new PostProcessor(new File("Resorces\\source\\"+tmps[0]+"."+tmps[1]),new File("Resorces\\result\\"+tmps[0]+"."+"src"),"-c");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -108,8 +251,33 @@ public class PostProcessor {
                 }
                 break;
             case 1:
+                //no input arguments, load gui
+                fc = new JFileChooser(new File(currentDir));
+                returnVal = fc.showOpenDialog(null);
+                if(returnVal == JFileChooser.APPROVE_OPTION)
+                {
+                    fileToOpen = fc.getSelectedFile();
+                    tmps = fileToOpen.getName().split("[.]");
+                    if(!tmps[1].equalsIgnoreCase("RSI"))
+                    {
+                        //not an RSI file. GTFO!
+                        System.exit(0);
+                    }
+                    try {
+                        Files.copy(fileToOpen.toPath(),new File("Resorces\\source\\"+tmps[0]+"."+tmps[1]).toPath(), StandardCopyOption.REPLACE_EXISTING);
+                        PostProcessor p = new PostProcessor(new File("Resorces\\source\\"+tmps[0]+"."+tmps[1]),new File("Resorces\\result\\"+tmps[0]+"."+"src"),args[0]);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                else
+                {
+                    System.exit(0);
+                }
+                break;
+            case 2:
                 //one input argument, should be input file, output is in current location
-                fileToOpen = new File(args[0]);
+                fileToOpen = new File(args[1]);
                 tmps = fileToOpen.getName().split("[.]");
                 if(!tmps[1].equalsIgnoreCase("RSI"))
                 {
@@ -118,16 +286,17 @@ public class PostProcessor {
                 }
                 try {
                     Files.copy(fileToOpen.toPath(), new File("Resorces\\source\\" + tmps[0] + "." + tmps[1]).toPath(), StandardCopyOption.REPLACE_EXISTING);
-                    PostProcessor p = new PostProcessor(new File("Resorces\\source\\"+tmps[0]+"."+tmps[1]),new File("Resorces\\result\\"+tmps[0]+"."+"src"));
+                    PostProcessor p = new PostProcessor(new File("Resorces\\source\\"+tmps[0]+"."+tmps[1]),new File("Resorces\\result\\"+tmps[0]+"."+"src"),args[0]);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
                 break;
-            case 2:
-                //two input arguments, input file and output file/location
-                fileToOpen = new File(args[0]);
-                File dest = new File(args[1]);
-                String[] desttmps = dest.getName().split("[.]");
+            /**
+            case 3:
+                //thre input arguments, input file and output file/location
+                fileToOpen = new File(args[1]);
+                dest = new File(args[2]);
+                desttmps = dest.getName().split("[.]");
                 if(!desttmps[1].equalsIgnoreCase("SRC"))
                 {
                     //target is not a src-file, GTFO
@@ -142,11 +311,12 @@ public class PostProcessor {
 
                 try {
                     Files.copy(fileToOpen.toPath(),new File("Resorces\\source\\"+tmps[0]+"."+tmps[1]).toPath(), StandardCopyOption.REPLACE_EXISTING);
-                    PostProcessor p = new PostProcessor(new File("Resorces\\source\\"+tmps[0]+"."+tmps[1]),new File("Resorces\\result\\"+desttmps[0]+"."+"src"));
+                    PostProcessor p = new PostProcessor(new File("Resorces\\source\\"+tmps[0]+"."+tmps[1]),new File("Resorces\\result\\"+desttmps[0]+"."+"src"),args[0]);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
                 break;
+             **/
         }
     }
 }
