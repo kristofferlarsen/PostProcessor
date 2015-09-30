@@ -127,7 +127,8 @@ public class PostProcessor {
         for (int i = 0; i < childNodes.getLength(); i++) {
             Node n = childNodes.item(i);
             
-            if (n.getNodeName().equalsIgnoreCase("#text"))
+            if (n.getNodeName().equalsIgnoreCase("DefineBase") ||
+                n.getNodeName().equalsIgnoreCase("#text"))
                 continue;
             
             if (n.getNodeName().equalsIgnoreCase("rrs2_PureMotionStatement")) {
@@ -146,11 +147,23 @@ public class PostProcessor {
                 sb.append(indent);
                 sb.append(getStringForWaitForInputStatement(n));
                 sb.append("\r\n");
+            } else if (n.getNodeName().equalsIgnoreCase("rrs2_Delay")) {
+                sb.append(indent);
+                sb.append(getStringForDelayStatement(n));
+                sb.append("\r\n");
+            } else if (n.getNodeName().equalsIgnoreCase("DefineBase")) {
+                
             } else {
                 System.out.println(n.getNodeName());
             }
         }
         return sb.toString();
+    }
+    
+    private String getStringForDelayStatement(Node delayNode) {
+        Node durNode = findSubNode("rrs2_DelayDuration", delayNode);
+        String dur = durNode.getAttributes().getNamedItem("value").getNodeValue();
+        return "WAIT SEC " + dur;
     }
     
     private String getStringForWaitForInputStatement(Node waitNode) {
