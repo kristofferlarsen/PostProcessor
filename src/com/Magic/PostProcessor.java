@@ -138,11 +138,21 @@ public class PostProcessor {
                 sb.append(indent);
                 sb.append(getStringForBinaryOutStatement(n));
                 sb.append("\r\n");
+            } else if (n.getNodeName().equalsIgnoreCase("rrs2_SubRoutineCallStatement")) {
+                sb.append(indent);
+                sb.append(getStringForCallStatement(n));
+                sb.append("\r\n");
             } else {
                 System.out.println(n.getNodeName());
             }
         }
         return sb.toString();
+    }
+    
+    private String getStringForCallStatement(Node callNode) {
+        Node nameNode = findSubNode("rrs2_SubRoutineName", callNode);
+        String routineName = nameNode.getAttributes().getNamedItem("value").getNodeValue().toUpperCase();
+        return routineName + "()";
     }
     
     private String getStringForBinaryOutStatement(Node binOutNode) {
