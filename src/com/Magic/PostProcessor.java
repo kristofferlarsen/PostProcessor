@@ -142,11 +142,30 @@ public class PostProcessor {
                 sb.append(indent);
                 sb.append(getStringForCallStatement(n));
                 sb.append("\r\n");
+            } else if (n.getNodeName().equalsIgnoreCase("rrs2_WaitForBinaryInputStatement")) {
+                sb.append(indent);
+                sb.append(getStringForWaitForInputStatement(n));
+                sb.append("\r\n");
             } else {
                 System.out.println(n.getNodeName());
             }
         }
         return sb.toString();
+    }
+    
+    private String getStringForWaitForInputStatement(Node waitNode) {
+        Node numNode = findSubNode("rrs2_BinaryInputNumber", waitNode);
+        String inNum = numNode.getAttributes().getNamedItem("value").getNodeValue();
+        
+        Node trigOnNode = findSubNode("rrs2_BinaryTriggerType", waitNode);
+        int inVal = Integer.parseInt(trigOnNode.getAttributes().getNamedItem("value").getNodeValue());
+        
+        String codeLine = "WAIT FOR $IN[" + inNum + "]";
+        
+        if (inVal == 0)
+            codeLine = codeLine + "==FALSE";
+        
+        return codeLine;
     }
     
     private String getStringForCallStatement(Node callNode) {
