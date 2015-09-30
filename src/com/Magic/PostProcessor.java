@@ -1,5 +1,3 @@
-
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -21,6 +19,7 @@ public class PostProcessor {
     PrintWriter writer = null;
     String positionType = "";
     String routineFooter = "END\r\n\r\n";
+    String indent = "   ";
 
     public PostProcessor(File from, File to, String positionType) {
         this.positionType = positionType;
@@ -121,19 +120,48 @@ public class PostProcessor {
 
     private String handleRoutineBody(Node routineBody) {
         Element e = (Element) routineBody;
-        NodeList pureMotionNodes = e.getElementsByTagName("rrs2_PureMotionStatement");
+        
         StringBuilder sb = new StringBuilder();
-        for (int j = 0; j < pureMotionNodes.getLength(); j++) {
-            NodeList childNodes = pureMotionNodes.item(j).getChildNodes();
-            String pureMotionString = getStringForPureMotionStatement(childNodes);
-            sb.append("   ");
-            sb.append(pureMotionString);
-            sb.append("\r\n");
+        
+        NodeList childNodes = routineBody.getChildNodes();
+        for (int i = 0; i < childNodes.getLength(); i++) {
+            Node n = childNodes.item(i);
+            
+            if (n.getNodeName().equalsIgnoreCase("#text"))
+                continue;
+            
+            if (n.getNodeName().equalsIgnoreCase("rrs2_PureMotionStatement")) {
+                sb.append(indent);
+                sb.append(getStringForPureMotionStatement(n));
+                sb.append("\r\n");
+            } else if (n.getNodeName().equalsIgnoreCase("rrs2_SetBinaryOutputStatement")) {
+                sb.append(indent);
+                sb.append(getStringForBinaryOutStatement(n));
+                sb.append("\r\n");
+            } else {
+                System.out.println(n.getNodeName());
+            }
         }
         return sb.toString();
     }
     
-    private String getStringForPureMotionStatement(NodeList childNodes) {
+    private String getStringForBinaryOutStatement(Node binOutNode) {
+        Node numberNode = findSubNode("rrs2_BinaryOutputNumber", binOutNode);
+        Node outputNode = findSubNode("rrs2_BinaryOutputValue", binOutNode);
+        String outNum = numberNode.getAttributes().getNamedItem("value").getNodeValue();
+        String codeLine = "$OUT[" + outNum + "] = ";
+        
+        int outVal = Integer.parseInt(outputNode.getAttributes().getNamedItem("value").getNodeValue());
+        if (outVal == 1)
+            codeLine = codeLine + "TRUE";
+        else
+            codeLine = codeLine + "FALSE";
+
+        return codeLine;
+    }
+    
+    private String getStringForPureMotionStatement(Node pureMotionNode) {
+        NodeList childNodes = pureMotionNode.getChildNodes();
         Node targetFrame = childNodes.item(1);
         Node targetParameters = findSubNode("TargetParameters", targetFrame);
         Node localJoints = findSubNode("LocalJoints", targetFrame);
@@ -244,11 +272,11 @@ public class PostProcessor {
     private String doFileHead() {
         String head = "";
         head = head + "DEF PROGRAMNAME()\r\n\r\n"
-                + "EXT BAS (BAS_COMMAND: IN, REAL:IN)\r\n"
-                + "DECL AXIS HOME\r\n\r\n"
-                + "BAS (#INITMOV, 0)\r\n\r\n"
-                + "HOME = {AXIS: A1 0, A2 -90, A3 90, A4 0, A5 0, A6 0}\r\n\r\n"
-                + "PTP HOME\r\n\r\n";
+                + indent + "EXT BAS (BAS_COMMAND: IN, REAL:IN)\r\n"
+                + indent + "DECL AXIS HOME\r\n\r\n"
+                + indent + "BAS (#INITMOV, 0)\r\n\r\n"
+                + indent + "HOME = {AXIS: A1 0, A2 -90, A3 90, A4 0, A5 0, A6 0}\r\n\r\n"
+                + indent + "PTP HOME\r\n\r\n";
         return head;
     }
 
