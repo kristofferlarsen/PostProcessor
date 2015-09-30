@@ -1,6 +1,5 @@
-package postprocessor;
-
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
@@ -19,6 +18,8 @@ public class PostProcessor {
     String sourcePath = "";
     PrintWriter writer = null;
     String positionType = "";
+    String routineFooter = "END\r\n\r\n";
+    String indent = "   ";
 
     public PostProcessor(File from, File to, String positionType) {
         this.positionType = positionType;
@@ -62,90 +63,210 @@ public class PostProcessor {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         if (document != null) {
             //successfully created a document
-            NodeList nodes = document.getElementsByTagName("rrs2_PureMotionStatement");
+            
+            NodeList nodes = document.getElementsByTagName("rrs2_MainRoutine");
             for (int i = 0; i < nodes.getLength(); i++) {
-                NodeList childNodes = nodes.item(i).getChildNodes();
-                Node targetFrame = childNodes.item(1);
-                Node targetParameters = findSubNode("TargetParameters", targetFrame);
-                Node localJoints = findSubNode("LocalJoints", targetFrame);
-                Node motionParamters = findSubNode("MotionParameters", targetFrame);
-                Node pointData = targetParameters.getChildNodes().item(5);
-                Node motionData = motionParamters.getChildNodes().item(1);
-                Node axis1Data = localJoints.getChildNodes().item(1);
-                Node axis2Data = localJoints.getChildNodes().item(3);
-                Node axis3Data = localJoints.getChildNodes().item(5);
-                Node axis4Data = localJoints.getChildNodes().item(7);
-                Node axis5Data = localJoints.getChildNodes().item(9);
-                Node axis6Data = localJoints.getChildNodes().item(11);
-
-                double a1 = Double.parseDouble(axis1Data.getAttributes().getNamedItem("value").getNodeValue());
-                double a2 = Double.parseDouble(axis2Data.getAttributes().getNamedItem("value").getNodeValue());
-                double a3 = Double.parseDouble(axis3Data.getAttributes().getNamedItem("value").getNodeValue());
-                double a4 = Double.parseDouble(axis4Data.getAttributes().getNamedItem("value").getNodeValue());
-                double a5 = Double.parseDouble(axis5Data.getAttributes().getNamedItem("value").getNodeValue());
-                double a6 = Double.parseDouble(axis6Data.getAttributes().getNamedItem("value").getNodeValue());
-
-                double px = Double.parseDouble(pointData.getAttributes().getNamedItem("px").getNodeValue());
-                double py = Double.parseDouble(pointData.getAttributes().getNamedItem("py").getNodeValue());
-                double pz = Double.parseDouble(pointData.getAttributes().getNamedItem("pz").getNodeValue());
-                double nx = Double.parseDouble(pointData.getAttributes().getNamedItem("nx").getNodeValue());
-                double ny = Double.parseDouble(pointData.getAttributes().getNamedItem("ny").getNodeValue());
-                double nz = Double.parseDouble(pointData.getAttributes().getNamedItem("nz").getNodeValue());
-                double ox = Double.parseDouble(pointData.getAttributes().getNamedItem("ox").getNodeValue());
-                double oy = Double.parseDouble(pointData.getAttributes().getNamedItem("oy").getNodeValue());
-                double oz = Double.parseDouble(pointData.getAttributes().getNamedItem("oz").getNodeValue());
-                double ax = Double.parseDouble(pointData.getAttributes().getNamedItem("ax").getNodeValue());
-                double ay = Double.parseDouble(pointData.getAttributes().getNamedItem("ay").getNodeValue());
-                double az = Double.parseDouble(pointData.getAttributes().getNamedItem("az").getNodeValue());
-                double yaw = Math.toDegrees(Math.atan2(ny, nx));
-                double pitch = Math.toDegrees(Math.atan2(-nz, Math.sqrt(oz*oz + az*az)));
-                double roll = Math.toDegrees(Math.atan2(oz, az));
-                String motionType = motionData.getAttributes().getNamedItem("value").getNodeValue();
-
-                StringBuffer sb = new StringBuffer();
-                if (motionType.equalsIgnoreCase("LINEAR")) {
-                    sb.append("LIN {");
-                } else {
-                    sb.append("PTP {");
-                }
-                if (positionType.equalsIgnoreCase("-c")) {
-                    sb.append("X " + px + ",");
-                    sb.append("Y " + py + ",");
-                    sb.append("Z " + pz + ",");
-                    sb.append("A " + yaw + ",");
-                    sb.append("B " + pitch + ",");
-                    sb.append("C " + roll + "} C_DIS");
-                    try {
-                        writeFileLine(sb.toString());
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                    } catch (UnsupportedEncodingException e) {
-                        e.printStackTrace();
-                    }
-                }
-                if (positionType.equalsIgnoreCase("-a")) {
-                    sb.append("AXIS: ");
-                    sb.append("A1 " + a1 + ",");
-                    sb.append("A2 " + a2 + ",");
-                    sb.append("A3 " + a3 + ",");
-                    sb.append("A4 " + a4 + ",");
-                    sb.append("A5 " + a5 + ",");
-                    sb.append("A6 " + a6 + ",");
-                    sb.append("}");
-                    try {
-                        writeFileLine(sb.toString());
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                    } catch (UnsupportedEncodingException e) {
-                        e.printStackTrace();
-                    }
-                }
+                Node routineNode = nodes.item(i);
+                
+                StringBuilder sb = new StringBuilder();
+                
+                String routineHeader = doFileHead();
+                sb.append(routineHeader);
+                
+                Node subRoutineBody = findSubNode("rrs2_RoutineBody", routineNode);
+                sb.append(handleRoutineBody(subRoutineBody));
+                
+                sb.append(routineFooter);
+                
+                try {
+                    writeFileLine(sb.toString());
+                } catch (FileNotFoundException ex) {
+                    ex.printStackTrace();
+                } catch (UnsupportedEncodingException ex) {
+                    ex.printStackTrace();
+                } 
+            }
+            
+            
+            nodes = document.getElementsByTagName("rrs2_SubRoutine");
+            for (int i = 0; i < nodes.getLength(); i++) {
+                Node subRoutineNode = nodes.item(i);
+                Node subRoutineNameNode = findSubNode("rrs2_SubRoutineName", subRoutineNode);
+                
+                StringBuilder sb = new StringBuilder();
+                
+                String subRoutineName = subRoutineNameNode.getAttributes().getNamedItem("value").getNodeValue();
+                String routineHeader = "DEF " + subRoutineName.toUpperCase() + "()\r\n";
+                sb.append(routineHeader);
+                
+                Node subRoutineBody = findSubNode("rrs2_RoutineBody", subRoutineNode);
+                sb.append(handleRoutineBody(subRoutineBody));
+                
+                sb.append(routineFooter);
+                
+                try {
+                    writeFileLine(sb.toString());
+                } catch (FileNotFoundException ex) {
+                    ex.printStackTrace();
+                } catch (UnsupportedEncodingException ex) {
+                    ex.printStackTrace();
+                }                
             }
         }
     }
 
+    private String handleRoutineBody(Node routineBody) {
+        Element e = (Element) routineBody;
+        
+        StringBuilder sb = new StringBuilder();
+        
+        NodeList childNodes = routineBody.getChildNodes();
+        for (int i = 0; i < childNodes.getLength(); i++) {
+            Node n = childNodes.item(i);
+            
+            if (n.getNodeName().equalsIgnoreCase("DefineBase") ||
+                n.getNodeName().equalsIgnoreCase("#text"))
+                continue;
+            
+            if (n.getNodeName().equalsIgnoreCase("rrs2_PureMotionStatement")) {
+                sb.append(indent);
+                sb.append(getStringForPureMotionStatement(n));
+                sb.append("\r\n");
+            } else if (n.getNodeName().equalsIgnoreCase("rrs2_SetBinaryOutputStatement")) {
+                sb.append(indent);
+                sb.append(getStringForBinaryOutStatement(n));
+                sb.append("\r\n");
+            } else if (n.getNodeName().equalsIgnoreCase("rrs2_SubRoutineCallStatement")) {
+                sb.append(indent);
+                sb.append(getStringForCallStatement(n));
+                sb.append("\r\n");
+            } else if (n.getNodeName().equalsIgnoreCase("rrs2_WaitForBinaryInputStatement")) {
+                sb.append(indent);
+                sb.append(getStringForWaitForInputStatement(n));
+                sb.append("\r\n");
+            } else if (n.getNodeName().equalsIgnoreCase("rrs2_Delay")) {
+                sb.append(indent);
+                sb.append(getStringForDelayStatement(n));
+                sb.append("\r\n");
+            } else if (n.getNodeName().equalsIgnoreCase("DefineBase")) {
+                
+            } else {
+                System.out.println(n.getNodeName());
+            }
+        }
+        return sb.toString();
+    }
+    
+    private String getStringForDelayStatement(Node delayNode) {
+        Node durNode = findSubNode("rrs2_DelayDuration", delayNode);
+        String dur = durNode.getAttributes().getNamedItem("value").getNodeValue();
+        return "WAIT SEC " + dur;
+    }
+    
+    private String getStringForWaitForInputStatement(Node waitNode) {
+        Node numNode = findSubNode("rrs2_BinaryInputNumber", waitNode);
+        String inNum = numNode.getAttributes().getNamedItem("value").getNodeValue();
+        
+        Node trigOnNode = findSubNode("rrs2_BinaryTriggerType", waitNode);
+        int inVal = Integer.parseInt(trigOnNode.getAttributes().getNamedItem("value").getNodeValue());
+        
+        String codeLine = "WAIT FOR $IN[" + inNum + "]";
+        
+        if (inVal == 0)
+            codeLine = codeLine + "==FALSE";
+        
+        return codeLine;
+    }
+    
+    private String getStringForCallStatement(Node callNode) {
+        Node nameNode = findSubNode("rrs2_SubRoutineName", callNode);
+        String routineName = nameNode.getAttributes().getNamedItem("value").getNodeValue().toUpperCase();
+        return routineName + "()";
+    }
+    
+    private String getStringForBinaryOutStatement(Node binOutNode) {
+        Node numberNode = findSubNode("rrs2_BinaryOutputNumber", binOutNode);
+        Node outputNode = findSubNode("rrs2_BinaryOutputValue", binOutNode);
+        String outNum = numberNode.getAttributes().getNamedItem("value").getNodeValue();
+        String codeLine = "$OUT[" + outNum + "] = ";
+        
+        int outVal = Integer.parseInt(outputNode.getAttributes().getNamedItem("value").getNodeValue());
+        if (outVal == 1)
+            codeLine = codeLine + "TRUE";
+        else
+            codeLine = codeLine + "FALSE";
+
+        return codeLine;
+    }
+    
+    private String getStringForPureMotionStatement(Node pureMotionNode) {
+        NodeList childNodes = pureMotionNode.getChildNodes();
+        Node targetFrame = childNodes.item(1);
+        Node targetParameters = findSubNode("TargetParameters", targetFrame);
+        Node localJoints = findSubNode("LocalJoints", targetFrame);
+        Node motionParamters = findSubNode("MotionParameters", targetFrame);
+        Node pointData = targetParameters.getChildNodes().item(5);
+        Node motionData = motionParamters.getChildNodes().item(1);
+        Node axis1Data = localJoints.getChildNodes().item(1);
+        Node axis2Data = localJoints.getChildNodes().item(3);
+        Node axis3Data = localJoints.getChildNodes().item(5);
+        Node axis4Data = localJoints.getChildNodes().item(7);
+        Node axis5Data = localJoints.getChildNodes().item(9);
+        Node axis6Data = localJoints.getChildNodes().item(11);
+
+        double a1 = Double.parseDouble(axis1Data.getAttributes().getNamedItem("value").getNodeValue());
+        double a2 = Double.parseDouble(axis2Data.getAttributes().getNamedItem("value").getNodeValue());
+        double a3 = Double.parseDouble(axis3Data.getAttributes().getNamedItem("value").getNodeValue());
+        double a4 = Double.parseDouble(axis4Data.getAttributes().getNamedItem("value").getNodeValue());
+        double a5 = Double.parseDouble(axis5Data.getAttributes().getNamedItem("value").getNodeValue());
+        double a6 = Double.parseDouble(axis6Data.getAttributes().getNamedItem("value").getNodeValue());
+
+        double px = Double.parseDouble(pointData.getAttributes().getNamedItem("px").getNodeValue());
+        double py = Double.parseDouble(pointData.getAttributes().getNamedItem("py").getNodeValue());
+        double pz = Double.parseDouble(pointData.getAttributes().getNamedItem("pz").getNodeValue());
+        double nx = Double.parseDouble(pointData.getAttributes().getNamedItem("nx").getNodeValue());
+        double ny = Double.parseDouble(pointData.getAttributes().getNamedItem("ny").getNodeValue());
+        double nz = Double.parseDouble(pointData.getAttributes().getNamedItem("nz").getNodeValue());
+        double ox = Double.parseDouble(pointData.getAttributes().getNamedItem("ox").getNodeValue());
+        double oy = Double.parseDouble(pointData.getAttributes().getNamedItem("oy").getNodeValue());
+        double oz = Double.parseDouble(pointData.getAttributes().getNamedItem("oz").getNodeValue());
+        double ax = Double.parseDouble(pointData.getAttributes().getNamedItem("ax").getNodeValue());
+        double ay = Double.parseDouble(pointData.getAttributes().getNamedItem("ay").getNodeValue());
+        double az = Double.parseDouble(pointData.getAttributes().getNamedItem("az").getNodeValue());
+        double yaw = Math.toDegrees(Math.atan2(ny, nx));
+        double pitch = Math.toDegrees(Math.atan2(-nz, Math.sqrt(oz * oz + az * az)));
+        double roll = Math.toDegrees(Math.atan2(oz, az));
+        String motionType = motionData.getAttributes().getNamedItem("value").getNodeValue();
+
+        StringBuffer sb = new StringBuffer();
+        if (motionType.equalsIgnoreCase("LINEAR")) {
+            sb.append("LIN {");
+        } else {
+            sb.append("PTP {");
+        }
+        if (positionType.equalsIgnoreCase("-c")) {
+            sb.append("X " + px + ",");
+            sb.append("Y " + py + ",");
+            sb.append("Z " + pz + ",");
+            sb.append("A " + yaw + ",");
+            sb.append("B " + pitch + ",");
+            sb.append("C " + roll + "} C_DIS");
+        }
+        if (positionType.equalsIgnoreCase("-a")) {
+            sb.append("AXIS: ");
+            sb.append("A1 " + a1 + ",");
+            sb.append("A2 " + a2 + ",");
+            sb.append("A3 " + a3 + ",");
+            sb.append("A4 " + a4 + ",");
+            sb.append("A5 " + a5 + ",");
+            sb.append("A6 " + a6 + ",");
+            sb.append("}");
+        }
+        return sb.toString();
+    }
     public Node findSubNode(String name, Node node) {
         if (node.getNodeType() != Node.ELEMENT_NODE) {
             System.err.println("Error: Search node not of element type");
@@ -178,9 +299,7 @@ public class PostProcessor {
     private void writeFileLine(String line) throws FileNotFoundException, UnsupportedEncodingException {
         if (line.equalsIgnoreCase("@START@")) {
             writer = new PrintWriter(targetPath, "UTF-8");
-            writer.write(doFileHead() + "\r\n");
         } else if (line.equalsIgnoreCase("@END@")) {
-            writer.write("END");
             writer.close();
         } else {
             writer.write(line + "\r\n");
@@ -195,11 +314,11 @@ public class PostProcessor {
     private String doFileHead() {
         String head = "";
         head = head + "DEF PROGRAMNAME()\r\n\r\n"
-                + "EXT BAS (BAS_COMMAND: IN, REAL:IN)\r\n"
-                + "DECL AXIS HOME\r\n\r\n"
-                + "BAS (#INITMOV, 0)\r\n\r\n"
-                + "HOME = {AXIS: A1 0, A2 -90, A3 90, A4 0, A5 0, A6 0}\r\n\r\n"
-                + "PTP HOME\r\n\r\n";
+                + indent + "EXT BAS (BAS_COMMAND: IN, REAL:IN)\r\n"
+                + indent + "DECL AXIS HOME\r\n\r\n"
+                + indent + "BAS (#INITMOV, 0)\r\n\r\n"
+                + indent + "HOME = {AXIS: A1 0, A2 -90, A3 90, A4 0, A5 0, A6 0}\r\n\r\n"
+                + indent + "PTP HOME\r\n\r\n";
         return head;
     }
 
