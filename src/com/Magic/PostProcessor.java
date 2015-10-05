@@ -20,6 +20,7 @@ public class PostProcessor {
     String positionType = "";
     String routineFooter = "END\r\n\r\n";
     String indent = "   ";
+    boolean cDis = false;
 
     public PostProcessor(File from, File to, String positionType) {
         this.positionType = positionType;
@@ -151,13 +152,38 @@ public class PostProcessor {
                 sb.append(indent);
                 sb.append(getStringForDelayStatement(n));
                 sb.append("\r\n");
-            } else if (n.getNodeName().equalsIgnoreCase("DefineBase")) {
-                
+            } else if (n.getNodeName().equalsIgnoreCase("DefineTool")) {
+                sb.append(indent);
+                sb.append(getStringForDefineToolStatement(n));
+                sb.append("\r\n");
             } else {
                 System.out.println(n.getNodeName());
             }
         }
         return sb.toString();
+    }
+    
+    private String getStringForDefineToolStatement(Node defineNode) {
+        Node posNode = findSubNode("Position", defineNode);
+        String pz = posNode.getAttributes().getNamedItem("pz").getNodeValue();
+        String py = posNode.getAttributes().getNamedItem("py").getNodeValue();
+        String px = posNode.getAttributes().getNamedItem("px").getNodeValue();
+
+        String az = posNode.getAttributes().getNamedItem("az").getNodeValue();
+        String nz = posNode.getAttributes().getNamedItem("nz").getNodeValue();
+        String ny = posNode.getAttributes().getNamedItem("ny").getNodeValue();
+        String nx = posNode.getAttributes().getNamedItem("nx").getNodeValue();
+        String oz = posNode.getAttributes().getNamedItem("oz").getNodeValue();
+        
+        double yaw = Math.toDegrees(Math.atan2(Double.parseDouble(ny), Double.parseDouble(nx)));
+        
+        double azd = Double.parseDouble(az);
+        double ozd = Double.parseDouble(oz);
+        
+        double pitch = Math.toDegrees(Math.atan2(-Double.parseDouble(nz), Math.sqrt(ozd*ozd + azd*azd)));
+        double roll = Math.toDegrees(Math.atan2(ozd, azd));
+        
+        return "$TOOL = {x " + px + ",y " + py + ",z " + pz + ",a " + yaw + ",b " + pitch + ",c " + roll + "}";
     }
     
     private String getStringForDelayStatement(Node delayNode) {
@@ -253,7 +279,11 @@ public class PostProcessor {
             sb.append("Z " + pz + ",");
             sb.append("A " + yaw + ",");
             sb.append("B " + pitch + ",");
-            sb.append("C " + roll + "} C_DIS");
+            sb.append("C " + roll + "}");
+            
+            if (cDis) {
+                sb.append(" C_DIS");
+            }
         }
         if (positionType.equalsIgnoreCase("-a")) {
             sb.append("AXIS: ");
