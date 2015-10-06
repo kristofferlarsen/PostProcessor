@@ -187,7 +187,8 @@ public class PostProcessor {
         double pitch = Math.toDegrees(Math.atan2(-Double.parseDouble(nz), Math.sqrt(ozd*ozd + azd*azd)));
         double roll = Math.toDegrees(Math.atan2(ozd, azd));
         
-        return "$BASE = {x " + px + ",y " + py + ",z " + pz + ",a " + yaw + ",b " + pitch + ",c " + roll + "}";
+        String lowCase = "$BASE = {x " + px + ",y " + py + ",z " + pz + ",a " + yaw + ",b " + pitch + ",c " + roll + "}";
+        return lowCase.toUpperCase();
     }
     
     private String getStringForDefineToolStatement(Node defineNode) {
@@ -210,7 +211,8 @@ public class PostProcessor {
         double pitch = Math.toDegrees(Math.atan2(-Double.parseDouble(nz), Math.sqrt(ozd*ozd + azd*azd)));
         double roll = Math.toDegrees(Math.atan2(ozd, azd));
         
-        return "$TOOL = {x " + px + ",y " + py + ",z " + pz + ",a " + yaw + ",b " + pitch + ",c " + roll + "}";
+        String lowCase = "$TOOL = {x " + px + ",y " + py + ",z " + pz + ",a " + yaw + ",b " + pitch + ",c " + roll + "}";
+        return lowCase.toUpperCase();
     }
     
     private String getStringForDelayStatement(Node delayNode) {
@@ -322,8 +324,9 @@ public class PostProcessor {
             sb.append("A6 " + a6 + ",");
             sb.append("}");
         }
-        return sb.toString();
+        return sb.toString().toUpperCase();
     }
+    
     public Node findSubNode(String name, Node node) {
         if (node.getNodeType() != Node.ELEMENT_NODE) {
             System.err.println("Error: Search node not of element type");
