@@ -128,8 +128,7 @@ public class PostProcessor {
         for (int i = 0; i < childNodes.getLength(); i++) {
             Node n = childNodes.item(i);
             
-            if (n.getNodeName().equalsIgnoreCase("DefineBase") ||
-                n.getNodeName().equalsIgnoreCase("#text"))
+            if (n.getNodeName().equalsIgnoreCase("#text"))
                 continue;
             
             if (n.getNodeName().equalsIgnoreCase("rrs2_PureMotionStatement")) {
@@ -156,11 +155,39 @@ public class PostProcessor {
                 sb.append(indent);
                 sb.append(getStringForDefineToolStatement(n));
                 sb.append("\r\n");
+            } else if (n.getNodeName().equalsIgnoreCase("DefineBase")) {
+                sb.append(indent);
+                sb.append(getStringForDefineBaseStatement(n));
+                sb.append("\r\n");
             } else {
                 System.out.println(n.getNodeName());
             }
         }
         return sb.toString();
+    }
+    
+    private String getStringForDefineBaseStatement(Node defineNode) {
+        Node posNode = findSubNode("WorldPosition", defineNode);
+        
+        String pz = posNode.getAttributes().getNamedItem("pz").getNodeValue();
+        String py = posNode.getAttributes().getNamedItem("py").getNodeValue();
+        String px = posNode.getAttributes().getNamedItem("px").getNodeValue();
+
+        String az = posNode.getAttributes().getNamedItem("az").getNodeValue();
+        String nz = posNode.getAttributes().getNamedItem("nz").getNodeValue();
+        String ny = posNode.getAttributes().getNamedItem("ny").getNodeValue();
+        String nx = posNode.getAttributes().getNamedItem("nx").getNodeValue();
+        String oz = posNode.getAttributes().getNamedItem("oz").getNodeValue();
+        
+        double yaw = Math.toDegrees(Math.atan2(Double.parseDouble(ny), Double.parseDouble(nx)));
+        
+        double azd = Double.parseDouble(az);
+        double ozd = Double.parseDouble(oz);
+        
+        double pitch = Math.toDegrees(Math.atan2(-Double.parseDouble(nz), Math.sqrt(ozd*ozd + azd*azd)));
+        double roll = Math.toDegrees(Math.atan2(ozd, azd));
+        
+        return "$BASE = {x " + px + ",y " + py + ",z " + pz + ",a " + yaw + ",b " + pitch + ",c " + roll + "}";
     }
     
     private String getStringForDefineToolStatement(Node defineNode) {
