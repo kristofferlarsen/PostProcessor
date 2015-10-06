@@ -1,0 +1,2507 @@
+<rrs2_Program version="3.6">
+  <rrs2_ProgramName value="KR 5 arc_Program"/>
+  <rrs2_MainRoutine>
+    <rrs2_RoutineBody>
+      <rrs2_Halt name="X1">
+        <rrs2_ResetRun value="0"/>
+      </rrs2_Halt>
+      <DefineTool name="DT1">
+        <Frame value="TOOL_DATA[1]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="0" py="0" pz="99.53"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0"
+        nz="0" ow="0" ox="0" oy="1" oz="0" pw="1" px="0" py="0" pz="99.53"/>
+      </DefineTool>
+      <rrs2_SetBinaryOutputStatement name="S5">
+        <rrs2_BinaryOutputNumber value="51"/>
+        <rrs2_BinaryOutputValue value="1"/>
+      </rrs2_SetBinaryOutputStatement>
+      <rrs2_Delay name="D1">
+        <rrs2_DelayDuration value="1"/>
+      </rrs2_Delay>
+      <rrs2_WaitForBinaryInputStatement name="W1">
+        <rrs2_BinaryInputNumber value="50"/>
+        <rrs2_BinaryTriggerType value="1"/>
+        <rrs2_BinaryTriggerMode value="0"/>
+      </rrs2_WaitForBinaryInputStatement>
+      <rrs2_SubRoutineCallStatement name="RC1">
+        <rrs2_SubRoutineName value="FindTrack"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC2">
+        <rrs2_SubRoutineName value="ApplyGlue"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB1">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="1282" py="0" pz="325"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="-1167" py="3.57509594845482e-13" pz="1845"/>
+      </DefineBase>
+      <DefineBase name="DB2">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-48" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="163" py="-3.4999780851348e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB3">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-300" py="-560" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="415" py="560"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC3">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC4">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB4">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB5">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-230" py="-560" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="345" py="560"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC5">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC6">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB6">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB7">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-160" py="-560" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="275" py="560"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC7">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC8">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB8">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB9">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-90" py="-560" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="205" py="560"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC9">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC10">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB10">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB11">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-20" py="-560" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="135" py="560"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC11">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC12">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB12">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB13">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="50" py="-560" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="65.0000000000001"
+        py="560" pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC13">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC14">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB14">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB15">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="120" py="-560" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-4.99999999999986"
+        py="560" pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC15">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC16">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB16">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB17">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="190" py="-560" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-74.9999999999999"
+        py="560" pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC17">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC18">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SetBinaryOutputStatement name="S6">
+        <rrs2_BinaryOutputNumber value="51"/>
+        <rrs2_BinaryOutputValue value="1"/>
+      </rrs2_SetBinaryOutputStatement>
+      <rrs2_Delay name="D2">
+        <rrs2_DelayDuration value="1"/>
+      </rrs2_Delay>
+      <rrs2_WaitForBinaryInputStatement name="W2">
+        <rrs2_BinaryInputNumber value="50"/>
+        <rrs2_BinaryTriggerType value="1"/>
+        <rrs2_BinaryTriggerMode value="0"/>
+      </rrs2_WaitForBinaryInputStatement>
+      <rrs2_SubRoutineCallStatement name="RC19">
+        <rrs2_SubRoutineName value="FindTrack"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC20">
+        <rrs2_SubRoutineName value="ApplyGlue"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB18">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="1282" py="0" pz="325"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="-1167" py="3.57509594845482e-13" pz="1845"/>
+      </DefineBase>
+      <DefineBase name="DB19">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-48" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="163" py="-3.4999780851348e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB20">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="260" py="-560" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-145" py="560"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC21">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC22">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB21">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB22">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="330" py="-560" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-215" py="560"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC23">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC24">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB23">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB24">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-300" py="-656" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="415" py="656"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC25">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC26">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB25">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB26">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-230" py="-656" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="345" py="656"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC27">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC28">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB27">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB28">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-160" py="-656" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="275" py="656"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC29">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC30">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB29">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB30">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-90" py="-656" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="205" py="656"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC31">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC32">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB31">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB32">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-20" py="-656" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="135" py="656"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC33">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC34">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB33">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB34">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="50" py="-656" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="65.0000000000002"
+        py="656" pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC35">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC36">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SetBinaryOutputStatement name="S7">
+        <rrs2_BinaryOutputNumber value="51"/>
+        <rrs2_BinaryOutputValue value="1"/>
+      </rrs2_SetBinaryOutputStatement>
+      <rrs2_Delay name="D3">
+        <rrs2_DelayDuration value="1"/>
+      </rrs2_Delay>
+      <rrs2_WaitForBinaryInputStatement name="W3">
+        <rrs2_BinaryInputNumber value="50"/>
+        <rrs2_BinaryTriggerType value="1"/>
+        <rrs2_BinaryTriggerMode value="0"/>
+      </rrs2_WaitForBinaryInputStatement>
+      <rrs2_SubRoutineCallStatement name="RC37">
+        <rrs2_SubRoutineName value="FindTrack"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC38">
+        <rrs2_SubRoutineName value="ApplyGlue"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB35">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="1282" py="0" pz="325"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="-1167" py="3.57509594845482e-13" pz="1845"/>
+      </DefineBase>
+      <DefineBase name="DB36">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-48" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="163" py="-3.4999780851348e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB37">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="120" py="-656" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-4.99999999999984"
+        py="656" pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC39">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC40">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB38">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB39">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="190" py="-656" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-74.9999999999998"
+        py="656" pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC41">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC42">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB40">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB41">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="260" py="-656" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-145" py="656"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC43">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC44">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB42">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB43">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="330" py="-656" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-215" py="656"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC45">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC46">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB44">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB45">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-300" py="-752" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="415" py="752"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC47">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC48">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB46">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB47">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-230" py="-752" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="345" py="752"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC49">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC50">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB48">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB49">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-160" py="-752" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="275" py="752"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC51">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC52">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB50">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB51">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-90" py="-752" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="205" py="752"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC53">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC54">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SetBinaryOutputStatement name="S8">
+        <rrs2_BinaryOutputNumber value="51"/>
+        <rrs2_BinaryOutputValue value="1"/>
+      </rrs2_SetBinaryOutputStatement>
+      <rrs2_Delay name="D4">
+        <rrs2_DelayDuration value="1"/>
+      </rrs2_Delay>
+      <rrs2_WaitForBinaryInputStatement name="W4">
+        <rrs2_BinaryInputNumber value="50"/>
+        <rrs2_BinaryTriggerType value="1"/>
+        <rrs2_BinaryTriggerMode value="0"/>
+      </rrs2_WaitForBinaryInputStatement>
+      <rrs2_SubRoutineCallStatement name="RC55">
+        <rrs2_SubRoutineName value="FindTrack"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC56">
+        <rrs2_SubRoutineName value="ApplyGlue"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB52">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="1282" py="0" pz="325"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="-1167" py="3.57509594845482e-13" pz="1845"/>
+      </DefineBase>
+      <DefineBase name="DB53">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-48" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="163" py="-3.4999780851348e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB54">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-20" py="-752" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="135" py="752"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC57">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC58">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB55">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB56">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="50" py="-752" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="65.0000000000002"
+        py="752" pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC59">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC60">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB57">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB58">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="120" py="-752" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-4.99999999999982"
+        py="752" pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC61">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC62">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB59">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB60">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="190" py="-752" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-74.9999999999998"
+        py="752" pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC63">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC64">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB61">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB62">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="260" py="-752" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-145" py="752"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC65">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC66">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB63">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB64">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="330" py="-752" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-215" py="752"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC67">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC68">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB65">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB66">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-300" py="-848" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="415" py="848"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC69">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC70">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB67">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB68">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-230" py="-848" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="345" py="848"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC71">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC72">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SetBinaryOutputStatement name="S9">
+        <rrs2_BinaryOutputNumber value="51"/>
+        <rrs2_BinaryOutputValue value="1"/>
+      </rrs2_SetBinaryOutputStatement>
+      <rrs2_Delay name="D5">
+        <rrs2_DelayDuration value="1"/>
+      </rrs2_Delay>
+      <rrs2_WaitForBinaryInputStatement name="W5">
+        <rrs2_BinaryInputNumber value="50"/>
+        <rrs2_BinaryTriggerType value="1"/>
+        <rrs2_BinaryTriggerMode value="0"/>
+      </rrs2_WaitForBinaryInputStatement>
+      <rrs2_SubRoutineCallStatement name="RC73">
+        <rrs2_SubRoutineName value="FindTrack"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC74">
+        <rrs2_SubRoutineName value="ApplyGlue"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB69">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="1282" py="0" pz="325"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="-1167" py="3.57509594845482e-13" pz="1845"/>
+      </DefineBase>
+      <DefineBase name="DB70">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-48" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="163" py="-3.4999780851348e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB71">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-160" py="-848" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="275" py="848"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC75">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC76">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB72">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB73">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-90" py="-848" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="205" py="848"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC77">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC78">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB74">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB75">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="-20" py="-848" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="135" py="848"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC79">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC80">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB76">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB77">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="50" py="-848" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="65.0000000000002"
+        py="848" pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC81">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC82">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB78">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB79">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="120" py="-848" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-4.99999999999979"
+        py="848" pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC83">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC84">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB80">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB81">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="190" py="-848" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-74.9999999999998"
+        py="848" pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC85">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC86">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB82">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB83">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="260" py="-848" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-145" py="848"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC87">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC88">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <DefineBase name="DB84">
+        <Frame value="BASE_DATA[2]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="1"/>
+        <Position aw="0" ax="0" ay="0" az="1" nw="0" nx="1" ny="0" nz="0"
+        ow="0" ox="0" oy="1" oz="0" pw="1" px="-96" py="0" pz="0"/>
+        <WorldPosition aw="0" ax="0" ay="0" az="1" nw="0" nx="-1"
+        ny="2.95119831351e-16" nz="0" ow="0" ox="-2.43484702886e-16" oy="-1"
+        oz="0" pw="1" px="211" py="-4.9165532756196e-14" pz="1520"/>
+      </DefineBase>
+      <DefineBase name="DB85">
+        <Frame value="BASE_DATA[3]"/>
+        <IPOMode value="#NONE"/>
+        <Node value="*WORLD*"/>
+        <Relative value="0"/>
+        <Position aw="0" ax="1.22460635382238e-16" ay="0" az="-1" nw="0"
+        nx="-1" ny="-0" nz="-1.22460635382238e-16" ow="0" ox="0" oy="1"
+        oz="0" pw="1" px="330" py="-848" pz="284"/>
+        <WorldPosition aw="0" ax="-1.22460635382238e-16"
+        ay="3.61405620611423e-32" az="-1" nw="0" nx="1"
+        ny="-2.95119831351e-16" nz="-1.22460635382238e-16" ow="0"
+        ox="-2.43484702886e-16" oy="-1" oz="0" pw="1" px="-215" py="848"
+        pz="1804"/>
+      </DefineBase>
+      <rrs2_SubRoutineCallStatement name="RC89">
+        <rrs2_SubRoutineName value="PickMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+      <rrs2_SubRoutineCallStatement name="RC90">
+        <rrs2_SubRoutineName value="PlaceMagnet"/>
+      </rrs2_SubRoutineCallStatement>
+    </rrs2_RoutineBody>
+  </rrs2_MainRoutine>
+  <rrs2_SubRoutine>
+    <rrs2_SubRoutineName value="FindTrack"/>
+    <rrs2_RoutineBody>
+      <rrs2_PureMotionStatement name="P1">
+        <PtpTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="901" py="0" pz="402"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-75.7887"/>
+            <DOUBLE value="111.665"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="54.1238"/>
+            <DOUBLE value="2.8421709430404e-14"/>
+          </LocalJoints>
+          <ConfigParameters>
+            <VALUE name="Configuration" value="010"/>
+          </ConfigParameters>
+          <JointTurns>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+          </JointTurns>
+          <MotionParameters>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+          </MotionParameters>
+        </PtpTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P2">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="-0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="901" py="0" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-64.8230791838103"/>
+            <DOUBLE value="118.256192056569"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="36.566887127241"/>
+            <DOUBLE value="2.8421709430404e-14"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P3">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="901" py="20" pz="301"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-1.27161757633672"/>
+            <DOUBLE value="-64.739124209663"/>
+            <DOUBLE value="118.249220346575"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="36.4899038630878"/>
+            <DOUBLE value="-1.27161757633664"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P4">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="901" py="-50" pz="301"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="3.17630812702916"/>
+            <DOUBLE value="-64.6533431230891"/>
+            <DOUBLE value="118.116166436563"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="36.5371766865264"/>
+            <DOUBLE value="3.17630812702927"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P5">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="901" py="0" pz="402"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-70.9558592067074"/>
+            <DOUBLE value="115.636407266408"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="45.3194519402998"/>
+            <DOUBLE value="1.13686837721616e-13"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+    </rrs2_RoutineBody>
+  </rrs2_SubRoutine>
+  <rrs2_SubRoutine>
+    <rrs2_SubRoutineName value="ApplyGlue"/>
+    <rrs2_RoutineBody>
+      <rrs2_PureMotionStatement name="P6">
+        <PtpTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="-0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1286" py="0" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-75.7887"/>
+            <DOUBLE value="111.665"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="54.1238"/>
+            <DOUBLE value="2.8421709430404e-14"/>
+          </LocalJoints>
+          <ConfigParameters>
+            <VALUE name="Configuration" value="010"/>
+          </ConfigParameters>
+          <JointTurns>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+          </JointTurns>
+          <MotionParameters>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+          </MotionParameters>
+        </PtpTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_SetBinaryOutputStatement name="S1">
+        <rrs2_BinaryOutputNumber value="18"/>
+        <rrs2_BinaryOutputValue value="1"/>
+      </rrs2_SetBinaryOutputStatement>
+      <rrs2_PureMotionStatement name="P7">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1286" py="-28" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="1.2473004582894"/>
+            <DOUBLE value="-32.1223600988293"/>
+            <DOUBLE value="61.7801018815708"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="60.3422582172585"/>
+            <DOUBLE value="1.24730045828943"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P8">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="516" py="-28" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="3.10602709561644"/>
+            <DOUBLE value="-97.1861518390845"/>
+            <DOUBLE value="157.438891839333"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="29.7472599997517"/>
+            <DOUBLE value="3.10602709561647"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P9">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="516" py="-21" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="2.33051886797895"/>
+            <DOUBLE value="-97.2236106417459"/>
+            <DOUBLE value="157.469506301051"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="29.7541043406951"/>
+            <DOUBLE value="2.33051886797898"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P10">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1286" py="-21" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0.935539998239477"/>
+            <DOUBLE value="-32.1379130868277"/>
+            <DOUBLE value="61.8088669146853"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="60.3290461721425"/>
+            <DOUBLE value="0.935539998239506"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P11">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1286" py="-14" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0.623724126594254"/>
+            <DOUBLE value="-32.1490187169111"/>
+            <DOUBLE value="61.8294058746574"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="60.3196128422537"/>
+            <DOUBLE value="0.623724126594283"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P12">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="516" py="-14" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="1.55415537293419"/>
+            <DOUBLE value="-97.2504034178259"/>
+            <DOUBLE value="157.491382469145"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="29.7590209486806"/>
+            <DOUBLE value="1.55415537293425"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P13">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="516" py="-7" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0.777220650878206"/>
+            <DOUBLE value="-97.2664937153373"/>
+            <DOUBLE value="157.504511652176"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="29.7619820631609"/>
+            <DOUBLE value="0.777220650878263"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P14">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1286" py="-7" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0.311871302941285"/>
+            <DOUBLE value="-32.1556806381463"/>
+            <DOUBLE value="61.841726257602"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="60.3139543805443"/>
+            <DOUBLE value="0.311871302941341"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P15">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1286" py="0" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-32.1579010359561"/>
+            <DOUBLE value="61.8458325534627"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="60.3120684824935"/>
+            <DOUBLE value="8.5265128291212e-14"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P16">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="516" py="0" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-97.271859590143"/>
+            <DOUBLE value="157.508888627283"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="29.7629709628602"/>
+            <DOUBLE value="1.13686837721616e-13"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P17">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="516" py="7" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-0.777220650878178"/>
+            <DOUBLE value="-97.2664937153373"/>
+            <DOUBLE value="157.504511652176"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="29.7619820631609"/>
+            <DOUBLE value="-0.777220650878064"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P18">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1286" py="7" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-0.311871302941256"/>
+            <DOUBLE value="-32.1556806381463"/>
+            <DOUBLE value="61.841726257602"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="60.3139543805443"/>
+            <DOUBLE value="-0.311871302941142"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P19">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1286" py="14" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-0.623672515335841"/>
+            <DOUBLE value="-32.1490201870963"/>
+            <DOUBLE value="61.8294085936042"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="60.3196115934921"/>
+            <DOUBLE value="-0.623672515335727"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P20">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="516" py="14" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-1.55415537293419"/>
+            <DOUBLE value="-97.2504034178259"/>
+            <DOUBLE value="157.491382469145"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="29.7590209486806"/>
+            <DOUBLE value="-1.55415537293402"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P21">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="516" py="21" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-2.33051886797892"/>
+            <DOUBLE value="-97.2236106417459"/>
+            <DOUBLE value="157.469506301051"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="29.7541043406951"/>
+            <DOUBLE value="-2.33051886797875"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P22">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1286" py="21" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-0.935539998239449"/>
+            <DOUBLE value="-32.1379130868277"/>
+            <DOUBLE value="61.8088669146853"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="60.3290461721425"/>
+            <DOUBLE value="-0.935539998239278"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P23">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="1286" py="28" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-1.24730045828937"/>
+            <DOUBLE value="-32.1223600988293"/>
+            <DOUBLE value="61.7801018815708"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="60.3422582172585"/>
+            <DOUBLE value="-1.24730045828926"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P24">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value=""/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-1" ny="0" nz="-1.22460635382238e-16"
+            ow="0" ox="0" oy="1" oz="0" pw="1" px="516" py="28" pz="302"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="-3.10602709561641"/>
+            <DOUBLE value="-97.1861518390845"/>
+            <DOUBLE value="157.438891839333"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="29.7472599997517"/>
+            <DOUBLE value="-3.1060270956163"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_SetBinaryOutputStatement name="S2">
+        <rrs2_BinaryOutputNumber value="18"/>
+        <rrs2_BinaryOutputValue value="0"/>
+      </rrs2_SetBinaryOutputStatement>
+    </rrs2_RoutineBody>
+  </rrs2_SubRoutine>
+  <rrs2_SubRoutine>
+    <rrs2_SubRoutineName value="PlaceMagnet"/>
+    <rrs2_RoutineBody>
+      <rrs2_PureMotionStatement name="P25">
+        <PtpTarget>
+          <TargetParameters>
+            <VALUE name="Base" value="BASE_DATA[2]"/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-6.12303176911189e-17" ny="-1"
+            nz="-7.49830360911069e-33" ow="0" ox="-1"
+            oy="6.12303176911189e-17" oz="-1.22460635382238e-16" pw="1"
+            px="-1.22460635382238e-14" py="0" pz="100"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-75.7887"/>
+            <DOUBLE value="111.665"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="54.1238"/>
+            <DOUBLE value="2.8421709430404e-14"/>
+          </LocalJoints>
+          <ConfigParameters>
+            <VALUE name="Configuration" value="010"/>
+          </ConfigParameters>
+          <JointTurns>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+          </JointTurns>
+          <MotionParameters>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+          </MotionParameters>
+        </PtpTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P26">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value="BASE_DATA[2]"/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-6.12303176911189e-17" ny="-1"
+            nz="-7.49830360911069e-33" ow="0" ox="-1"
+            oy="6.12303176911189e-17" oz="-1.22460635382238e-16" pw="1"
+            px="0" py="0" pz="0"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-95.0308849359299"/>
+            <DOUBLE value="152.495516393352"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="32.5353685425781"/>
+            <DOUBLE value="90"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_SetBinaryOutputStatement name="S3">
+        <rrs2_BinaryOutputNumber value="1"/>
+        <rrs2_BinaryOutputValue value="0"/>
+      </rrs2_SetBinaryOutputStatement>
+      <rrs2_PureMotionStatement name="P27">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value="BASE_DATA[2]"/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="1.22460635382238e-16" ay="0" az="-1"
+            name="Target" nw="0" nx="-6.12303176911189e-17" ny="-1"
+            nz="-7.49830360911069e-33" ow="0" ox="-1"
+            oy="6.12303176911189e-17" oz="-1.22460635382238e-16" pw="1"
+            px="-1.22460635382238e-14" py="0" pz="100"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-104.389729914253"/>
+            <DOUBLE value="148.095727384302"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="46.2940025299512"/>
+            <DOUBLE value="90"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+    </rrs2_RoutineBody>
+  </rrs2_SubRoutine>
+  <rrs2_SubRoutine>
+    <rrs2_SubRoutineName value="PickMagnet"/>
+    <rrs2_RoutineBody>
+      <rrs2_PureMotionStatement name="P28">
+        <PtpTarget>
+          <TargetParameters>
+            <VALUE name="Base" value="BASE_DATA[3]"/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="0" ay="0" az="1" name="Target" nw="0" nx="1"
+            ny="0" nz="0" ow="0" ox="0" oy="1" oz="0" pw="1" px="0" py="0"
+            pz="-100"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-75.7887"/>
+            <DOUBLE value="111.665"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="54.1238"/>
+            <DOUBLE value="2.8421709430404e-14"/>
+          </LocalJoints>
+          <ConfigParameters>
+            <VALUE name="Configuration" value="010"/>
+          </ConfigParameters>
+          <JointTurns>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+          </JointTurns>
+          <MotionParameters>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+          </MotionParameters>
+        </PtpTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_PureMotionStatement name="P29">
+        <FrameTarget>
+          <TargetParameters>
+            <VALUE name="Base" value="BASE_DATA[3]"/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="0" ay="0" az="1" name="Target" nw="0" nx="1"
+            ny="0" nz="0" ow="0" ox="0" oy="1" oz="0" pw="1" px="0" py="0"
+            pz="0"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="68.7364534598581"/>
+            <DOUBLE value="-62.9436014540635"/>
+            <DOUBLE value="117.536083291074"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="35.4075181629899"/>
+            <DOUBLE value="68.7364534598581"/>
+          </LocalJoints>
+          <MotionParameters>
+            <VALUE name="MotionType" value="Linear"/>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+            <VALUE name="MaxSpeed" value="2000"/>
+            <VALUE name="Acceleration" value="2300"/>
+            <VALUE name="Deceleration" value="2300"/>
+            <VALUE name="MaxAngularSpeed" value="180"/>
+            <VALUE name="AngularAcceleration" value="360"/>
+            <VALUE name="AngularDeceleration" value="360"/>
+            <VALUE name="OrientationInterpolationMode" value="1"/>
+            <VALUE name="ConfigurationMode" value="0"/>
+          </MotionParameters>
+        </FrameTarget>
+      </rrs2_PureMotionStatement>
+      <rrs2_SetBinaryOutputStatement name="S4">
+        <rrs2_BinaryOutputNumber value="1"/>
+        <rrs2_BinaryOutputValue value="1"/>
+      </rrs2_SetBinaryOutputStatement>
+      <rrs2_PureMotionStatement name="P30">
+        <PtpTarget>
+          <TargetParameters>
+            <VALUE name="Base" value="BASE_DATA[3]"/>
+            <VALUE name="Tool" value="TOOL_DATA[1]"/>
+            <VALUE aw="0" ax="0" ay="0" az="1" name="Target" nw="0" nx="1"
+            ny="0" nz="0" ow="0" ox="0" oy="1" oz="0" pw="1" px="0" py="0"
+            pz="-100"/>
+            <VALUE name="ExternalTCP" value="0"/>
+          </TargetParameters>
+          <LocalJoints>
+            <DOUBLE value="0"/>
+            <DOUBLE value="-75.7887"/>
+            <DOUBLE value="111.665"/>
+            <DOUBLE value="0"/>
+            <DOUBLE value="54.1238"/>
+            <DOUBLE value="2.8421709430404e-14"/>
+          </LocalJoints>
+          <ConfigParameters>
+            <VALUE name="Configuration" value="010"/>
+          </ConfigParameters>
+          <JointTurns>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+            <INT value="0"/>
+          </JointTurns>
+          <MotionParameters>
+            <VALUE name="JointSpeed" value="100"/>
+            <VALUE name="JointForce" value="100"/>
+            <VALUE name="Synchronize" value="1"/>
+            <VALUE name="CycleTime" value="0"/>
+          </MotionParameters>
+        </PtpTarget>
+      </rrs2_PureMotionStatement>
+    </rrs2_RoutineBody>
+  </rrs2_SubRoutine>
+</rrs2_Program>
